@@ -126,17 +126,6 @@ public class Functions {
         return bestMove;
 
     }
-
-    /*public static void main(String[] args) { 
-        char board[][] = {{ 'X', 'O', 'X' }, 
-                         { 'O', 'O', 'X' }, 
-                         { '_', '_', '_' }}; 
-  
-        Move bestMove = findBestMove(board); 
-
-        System.out.printf("ROW: %d COL: %d\n\n",  bestMove.row, bestMove.col ); 
-    } 
-    */
   
 }    
     

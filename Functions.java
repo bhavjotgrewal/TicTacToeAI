@@ -1,6 +1,6 @@
 public class Functions {
 
-    private static class Move {
+    public static class Move {
         int row;
         int col;
     }
@@ -102,7 +102,7 @@ public class Functions {
         }  
     }
 
-    private static Move findBestMove(char board[][]) {
+    public static Move findBestMove(char board[][]) {
         int bestValue = -1000;
         Move bestMove = new Move();
         bestMove.row = -1;
@@ -127,7 +127,7 @@ public class Functions {
 
     }
 
-    public static void main(String[] args) { 
+    /*public static void main(String[] args) { 
         char board[][] = {{ 'X', 'O', 'X' }, 
                          { 'O', 'O', 'X' }, 
                          { '_', '_', '_' }}; 
@@ -136,6 +136,7 @@ public class Functions {
 
         System.out.printf("ROW: %d COL: %d\n\n",  bestMove.row, bestMove.col ); 
     } 
+    */
   
 }    
     

@@ -66,6 +66,7 @@ public class Game {
 					else if (innerI == 3) {
 						x1y0.setText("O");
 						board[1][0] = 'O';
+
 					} else if (innerI == 4) {
 						x1y1.setText("O");
 						board[1][1] = 'O';
@@ -74,6 +75,7 @@ public class Game {
 					else if (innerI == 5) {
 						x1y2.setText("O");
 						board[1][2] = 'O';
+
 					} else if (innerI == 6) {
 						x2y0.setText("O");
 						board[2][0] = 'O';
@@ -98,30 +100,33 @@ public class Game {
 
 					board[row][col] = 'X';
 
-					if (row == 0) {
-						if (col == 0) {
-							x0y0.setText("X");
-						} else if (col == 1) {
-							x0y1.setText("X");
-						} else if (col == 2) {
-							x0y2.setText("X");
+					while (true) {
+						if (row == 0) {
+							if (col == 0) {
+								x0y0.setText("X");
+							} else if (col == 1) {
+								x0y1.setText("X");
+							} else if (col == 2) {
+								x0y2.setText("X");
+							}
+						} else if (row == 1) {
+							if (col == 0) {
+								x1y0.setText("X");
+							} else if (col == 1) {
+								x1y1.setText("X");
+							} else if (col == 2) {
+								x1y2.setText("X");
+							}
+						} else if (row == 2) {
+							if (col == 0) {
+								x2y0.setText("X");
+							} else if (col == 1) {
+								x2y1.setText("X");
+							} else if (col == 2) {
+								x2y2.setText("X");
+							}
 						}
-					} else if (row == 1) {
-						if (col == 0) {
-							x1y0.setText("X");
-						} else if (col == 1) {
-							x1y1.setText("X");
-						} else if (col == 2) {
-							x1y2.setText("X");
-						}
-					} else if (row == 2) {
-						if (col == 0) {
-							x2y0.setText("X");
-						} else if (col == 1) {
-							x2y1.setText("X");
-						} else if (col == 2) {
-							x2y2.setText("X");
-						}
+						break;
 					}
 
 				}
